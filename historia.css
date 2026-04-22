@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #1B4F12;
+    --cor-secundaria: #0A150B;
+    --cor-texto: #333;
+    --cor-texto-claro: #CBB6B6;
+    --cor-fundo: #f5f5f5;
+    --cor-destaque: #007bff;
+    --sombra: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ p {
+    color: black;
+    font-size: 18px ;
+}

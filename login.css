@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #1B4F12;
+    --cor-secundaria: #0A150B;
+    --cor-texto: #333;
+    --cor-texto-claro: #CBB6B6;
+    --cor-fundo: #f5f5f5;
+    --cor-destaque: #007bff;
+    --sombra: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.PessoalFundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px) brightness(0.7);
+    z-index: -1;
+}
+
+.efeito {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.efeito input {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.efeito input:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(27, 79, 18, 0.1);
+}
+
+.efeito label {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: white;
+    padding: 0 8px;
+    z-index: 2;
+}
+
+.efeito input:focus + label,
+.efeito input:not(:placeholder-shown) + label {
+    top: 0;
+    transform: translateY(-50%) scale(0.9);
+    color: var(--cor-primaria);
+    font-weight: 500;
+    border-radius: 1000px;
+    background: linear-gradient(135deg, #2e7d32, var(--cor-primaria));
+    color: var(--cor-fundo);
+
+}
+
+.quadraExibicao h1{
+    color: #ffffff;
+}
+
+.quadroExibicao {
+    color: #ffffff;
+     background: linear-gradient(135deg, var(--cor-primaria), #0A150B);
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto 40px;
+    box-shadow: var(--sombra);
+
+}
+
+.quadroExibicao p {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.divdiv{
+    margin: 0% auto;
+    background-color: #2d5630;
+    border-radius: 50px;
+    width: 300px;
+    height: 75px;
+}
+
+.quadropreto h1{
+    color: #ffffff;
+}
+.quadropreto {
+    background: linear-gradient(135deg, var(--cor-primaria), #0A150B);
+    color: white;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 0 auto 40px;
+    box-shadow: var(--sombra);
+
+}
+
+.Fundo {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: blur(2px) brightness(0.7);
+}

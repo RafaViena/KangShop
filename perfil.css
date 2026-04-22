@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #1B4F12;
+    --cor-secundaria: #0A150B;
+    --cor-texto: #333;
+    --cor-texto-claro: #CBB6B6;
+    --cor-fundo: #f5f5f5;
+    --cor-destaque: #007bff;
+    --sombra: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-info {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+    margin-bottom: 20px;
+}
+
+.perfil-info p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+
+.FotodeUsuario{
+    border-radius: 500px;
+    max-width: 120px;
+    align-self: flex-end;
+    margin-left: 70px;
+}
+
+main{
+    width: 800px;
+}
+
+.imga{
+    display: flex;
+    flex-direction: column;
+}
+
+.imga a{
+    padding-left: 8px;
+    text-align: right;
+    padding-top: 7px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: (var(--cor-primaria));
+}
+
+.imga a:hover{
+    transform: translateY(-2px);
+    transition: 105ms;
+    color: rgb(10, 148, 10);
+}
